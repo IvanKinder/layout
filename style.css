@@ -1,0 +1,101 @@
+/* .body {
+    width: 1600px;
+} */
+
+.top {
+    background: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-top {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    margin-left: 231px;
+    margin-right: 231px;
+}
+
+.top-left {
+    width: 105px;
+}
+
+.top-right {
+    width: 140px;
+}
+
+.search {
+    margin-top: 10px;
+}
+
+.lines {
+    margin-top: 5px;
+}
+
+.preview {
+    display: grid;
+    background: #F1E4E6;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.man-text {
+    display: flex;
+    justify-content: space-between;
+    width: 405px;
+}
+
+.big-text {
+    align-self: center;
+}
+
+.im1 {
+    grid-area: im1;
+    /* background: rgba(33, 22, 22, 0.7); */
+    /* background-image: url("static/forwomen.png"); */
+    /* opacity: 0.4; */
+}
+.im2 {
+    grid-area: im2;
+}
+.im3 {
+    grid-area: im3;
+}
+.im4 {
+    grid-area: im4;
+}
+
+.content {
+    display: grid;
+    width: 1140px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 65px;
+    /* margin-right: 230px; */
+    margin-left: 350px;
+    grid-template-areas: 
+        "im1 im2 im3"
+        "im4 im4 im4"
+    ;
+}
+
+.im1rec {
+    position: absolute;
+    left: 358px;
+}
+
+.im2rec {
+    position: absolute;
+    left: 748px;
+}
+
+.im3rec {
+    position: absolute;
+    left: 1138px;
+}
+
+.im4rec {
+    position: absolute;
+    left: 358px;
+}
