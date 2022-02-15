@@ -1,6 +1,104 @@
-/* .body {
-    width: 1600px;
-} */
+@media (max-width: 767px) {
+    .top {
+        width: 767px;
+    }
+
+    .preview {
+        width: 767px;
+    }
+    .top-top {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+    .content {
+        display: grid;
+        margin-left: 0;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+        margin-top: 18px;
+        margin-left: 0;
+        grid-template-areas: 
+            "im1 im2 im3"
+            "im4 im4 im4"
+            "im5 im5 im5"
+        ;
+    }
+    .pic {
+        width: 244px;
+    }
+    .pic1 {
+        width: 768px;
+    }
+    .im1rec {
+        display: none;
+    }
+    .im2rec {
+        display: none;
+    }
+    .im3rec {
+        display: none;
+    }
+    .im4rec {
+        display: none;
+    }
+    .im1text {
+        display: none;
+    }
+    .im2text {
+        display: none;
+    }
+    .im3text {
+        display: none;
+    }
+    .im4text {
+        display: none;
+    }
+    .manimg {
+        width: 50vw;
+    }
+    .bigtextimg {
+        width: 40vw;
+    }
+    .man-text {
+        width: 307px;
+    }
+}
+
+@media (max-width: 375px) {
+    .man {
+        display: none;
+    }
+    .user {
+        display: none;
+    }
+    .basket {
+        display: none;
+    }
+    .lines {
+        margin-left: 100px;
+    }
+    .content {
+        display: grid;
+        margin-left: 0;
+        grid-template-columns: 1fr;
+        gap: 18px;
+        margin-top: 18px;
+        margin-left: 0;
+        grid-template-areas: 
+            "im1"
+            "im2"
+            "im3"
+            "im4"
+            "im5"
+        ;
+    }
+    .pic {
+        width: 768px;
+    }
+    .pic1 {
+        width: 768px;
+    }
+}
 
 .top {
     background: black;
@@ -13,8 +111,6 @@
     justify-content: space-between;
     margin-top: 18px;
     margin-bottom: 18px;
-    margin-left: 231px;
-    margin-right: 231px;
 }
 
 .top-left {
@@ -43,7 +139,6 @@
 .man-text {
     display: flex;
     justify-content: space-between;
-    width: 405px;
 }
 
 .big-text {
@@ -52,9 +147,6 @@
 
 .im1 {
     grid-area: im1;
-    /* background: rgba(33, 22, 22, 0.7); */
-    /* background-image: url("static/forwomen.png"); */
-    /* opacity: 0.4; */
 }
 .im2 {
     grid-area: im2;
@@ -65,37 +157,102 @@
 .im4 {
     grid-area: im4;
 }
-
-.content {
-    display: grid;
-    width: 1140px;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin-top: 65px;
-    /* margin-right: 230px; */
-    margin-left: 350px;
-    grid-template-areas: 
-        "im1 im2 im3"
-        "im4 im4 im4"
-    ;
+.im5 {
+    grid-area: im5;
+    justify-self: center;
 }
 
-.im1rec {
-    position: absolute;
-    left: 358px;
+@media (min-width: 768px) {
+    body {
+        width: 1600px;
+        margin-left: 160px;
+    }
+    .top {
+        width: 1600px;
+    }
+    .top-top {
+        margin-left: 231px;
+        margin-right: 231px;
+    }
+    .preview {
+        width: 1600px;
+    }
+    .content {
+        display: grid;
+        width: 1140px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin-top: 65px;
+        margin-left: 250px;
+        grid-template-areas: 
+            "im1 im2 im3"
+            "im4 im4 im4"
+            "im5 im5 im5"
+        ;
+    }
+    .man-text {
+        width: 405px;
+    }
+
+    .im1rec {
+        position: absolute;
+        left: 410px;
+    }
+
+    .im2rec {
+        position: absolute;
+        left: 800px;
+    }
+
+    .im3rec {
+        position: absolute;
+        left: 1190px;
+    }
+
+    .im4rec {
+        position: absolute;
+        left: 410px;
+    }
+
+    .im1text {
+        position: absolute;
+        left: 515px;
+        top: 1028px;
+    }
+
+    .im2text {
+        position: absolute;
+        left: 926px;
+        top: 1028px;
+    }
+
+    .im3text {
+        position: absolute;
+        left: 1315px;
+        top: 1028px;
+    }
+
+    .im4text {
+        position: absolute;
+        left: 896px;
+        top: 1278px;
+    }
 }
 
-.im2rec {
-    position: absolute;
-    left: 748px;
+.text {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
 }
 
-.im3rec {
-    position: absolute;
-    left: 1138px;
-}
-
-.im4rec {
-    position: absolute;
-    left: 358px;
+.little-text {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
 }
