@@ -62,6 +62,10 @@
     .man-text {
         width: 307px;
     }
+    .human {
+        width: 360px;
+        height: 420px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -162,6 +166,60 @@
     justify-self: center;
 }
 
+.im6 {
+    grid-area: im6;
+}
+.im7 {
+    grid-area: im7;
+}
+.im8 {
+    grid-area: im8;
+}
+.im9 {
+    grid-area: im9;
+}
+.im10 {
+    grid-area: im10;
+}
+.im11 {
+    grid-area: im11;
+}
+.all-btn {
+    grid-area: all-btn;
+    color: red;
+    justify-self: center;
+    background-color: #fff;
+    border: solid 1px red;
+    padding: 14px 38px 14px 38px;
+}
+.see1 {
+    grid-area: see1;
+}
+.see2 {
+    grid-area: see2;
+}
+.see3 {
+    grid-area: see3;
+}
+.see-h-1 {
+    grid-area: see-h-1;
+}
+.see-h-2 {
+    grid-area: see-h-2;
+}
+.see-h-3 {
+    grid-area: see-h-3;
+}
+.see-text1 {
+    grid-area: see-text1;
+}
+.see-text2 {
+    grid-area: see-text2;
+}
+.see-text3 {
+    grid-area: see-text3;
+}
+
 @media (min-width: 768px) {
     body {
         width: 1600px;
@@ -188,54 +246,125 @@
             "im1 im2 im3"
             "im4 im4 im4"
             "im5 im5 im5"
+            "im6 im7 im8"
+            "im9 im10 im11"
+            "all-btn all-btn all-btn"
         ;
     }
     .man-text {
         width: 405px;
     }
-
     .im1rec {
         position: absolute;
         left: 410px;
     }
-
     .im2rec {
         position: absolute;
         left: 800px;
     }
-
     .im3rec {
         position: absolute;
         left: 1190px;
     }
-
     .im4rec {
         position: absolute;
         left: 410px;
     }
-
     .im1text {
         position: absolute;
         left: 515px;
         top: 1028px;
     }
-
     .im2text {
         position: absolute;
         left: 926px;
         top: 1028px;
     }
-
     .im3text {
         position: absolute;
         left: 1315px;
         top: 1028px;
     }
-
     .im4text {
         position: absolute;
         left: 896px;
         top: 1278px;
+    }
+    .human-header {
+        font-family: Lato;
+        font-style: normal;
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .human-text {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #5D5D5D;
+    }
+    .human-back {
+        background: #F8F8F8;
+        margin-top: -5px;
+        padding: 18px;
+    }
+    .price {
+        color: red;
+    }
+    .browes-all {
+        margin: 0;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .see {
+        padding-top: 100px;
+        display: grid;
+        background-color: black;
+        height: 340px;
+        margin-top: 95px;
+        justify-content: center;
+        gap: 28px 347px;
+        text-align: center;
+        grid-template-rows: repeat(3, 20px);
+        grid-template-areas: 
+            "see1 see2 see3"
+            "see-h-1 see-h-2 see-h-3"
+            "see-text1 see-text2 see-text3"
+        ;
+    }
+    .see-header {
+        color: white;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19.96px;
+        line-height: 24px;
+        margin-top: 0;
+    }
+    .see-text {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13.972px;
+        line-height: 17px;
+        text-align: center;
+        color: #FBFBFB;
+    }
+    .catalog-name {
+        margin-top: 60px;
+        margin-left: 230px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 29px;color: #F16D7F;
+    }
+    .catalog-info {
+        background-color: #F8F3F4;
     }
 }
 
