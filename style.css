@@ -1,10 +1,14 @@
 @media (max-width: 767px) {
+    .body {
+        margin: 0;
+    }
     .top {
         width: 767px;
     }
 
     .preview {
         width: 767px;
+        height: 365px;
     }
     .top-top {
         margin-left: 32px;
@@ -13,21 +17,26 @@
     .content {
         display: grid;
         margin-left: 0;
+        width: 768px;
         grid-template-columns: repeat(3, 1fr);
         gap: 18px;
         margin-top: 18px;
-        margin-left: 0;
-        grid-template-areas: 
+        grid-template-areas:
             "im1 im2 im3"
             "im4 im4 im4"
             "im5 im5 im5"
+            "im6 im7 im8"
+            "im9 im10 im11"
+            "all-btn all-btn all-btn"
         ;
     }
     .pic {
         width: 244px;
+        display: block;
     }
     .pic1 {
         width: 768px;
+        display: block;
     }
     .im1rec {
         display: none;
@@ -55,20 +64,111 @@
     }
     .manimg {
         width: 50vw;
-    }
-    .bigtextimg {
-        width: 40vw;
-    }
-    .man-text {
-        width: 307px;
+        display: block;
     }
     .human {
-        width: 360px;
-        height: 420px;
+        width: 100%;
+        display: block;
+    }
+    .human-back {
+        background: #F8F8F8;
+        padding: 15px;
+    }
+    .all-btn {
+        margin-bottom: 10px;
+    }
+    .browes-all {
+        margin: 0;
+    }
+    .see {
+        display: grid;
+        background: black;
+        width: 667px;
+        justify-items: center;
+        height: 600px;
+        padding: 50px;
+
+        grid-template-areas:
+            "see1"
+            "see-h-1"
+            "see-text1"
+            "see2"
+            "see-h-2"
+            "see-text2"
+            "see3"
+            "see-h-3"
+            "see-text3"
+        ;
+    }
+    .see-header {
+        color: white;
+    }
+    .see-text {
+        color: #FBFBFB;
+    }
+    .catalog-info {
+        display: grid;
+        gap: 333px;
+        grid-template-areas:
+            "cat-name cat-path"
+        ;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        padding-left: 10px;
+        background-color: #F8F3F4;
+    }
+    .catalog-name {
+        font-family: Lato, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+    }
+    .catalog-path {
+        font-family: Lato, sans-serif;
+        font-style: normal;
+        font-weight: 300;
+    }
+    .catalog-set {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+        /* width: 650px; */
+    }
+    sorting {
+        color: #6F6E6E;
+        display: flex;
+    }
+    filter {
+        display: flex;
+        margin-left: 10px;
+    }
+    .cat-path {
+        display: flex;
+        margin: 0 20px 0 0;
+        height: 5px;
+        align-items: baseline;
+    }
+    .im14 {
+        display: none;
+    }
+    main {
+        display: grid;
+        gap: 16px;
+        grid-template-areas:
+            "im6 im7"
+            "im8 im9"
+            "im10 im11"
+            "im12 im13"
+            "pagin pagin"
+        ;
     }
 }
 
 @media (max-width: 375px) {
+    .body {
+        margin: 0;
+    }
     .man {
         display: none;
     }
@@ -84,23 +184,184 @@
     .content {
         display: grid;
         margin-left: 0;
-        grid-template-columns: 1fr;
+        grid-template-columns: 767px;
         gap: 18px;
         margin-top: 18px;
-        margin-left: 0;
-        grid-template-areas: 
+        grid-template-areas:
             "im1"
             "im2"
             "im3"
             "im4"
             "im5"
+            "im6"
+            "im7"
+            "im8"
+            "im9"
+            "im10"
+            "im11"
+            "all-btn"
         ;
     }
     .pic {
         width: 768px;
+        display: block;
     }
     .pic1 {
         width: 768px;
+        display: block;
+    }
+    .big-text {
+        margin-left: 10px;
+    }
+    .rect {
+        margin-left: 215px;
+    }
+    .im1rec {
+        display: block;
+        width: 768px;
+        position: absolute;
+        top: 470px;
+    }
+    .im2rec {
+        display: block;
+        width: 768px;
+        position: absolute;
+        top: 1040px;
+    }
+    .im3rec {
+        display: block;
+        width: 768px;
+        position: absolute;
+        top: 1615px;
+    }
+    .im4rec {
+        display: block;
+        width: 768px;
+        position: absolute;
+        top: 2187px;
+    }
+    .im1text {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 700px;
+        left: 240px;
+        max-width: 300px;
+    }
+    .im2text {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 1270px;
+        left: 240px;
+        max-width: 300px;
+    }
+    .im3text {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 1840px;
+        left: 240px;
+        max-width: 300px;
+    }
+    .im4text {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 2220px;
+        left: 240px;
+        max-width: 300px;
+    }
+    .text {
+        font-size: 60px;
+    }
+    .little-text {
+        font-size: 28px;
+        margin-top: 10px;
+    }
+    .human {
+        width: 768px;
+        height: 76%;
+        display: block;
+    }
+    .human-back {
+        background: #F8F8F8;
+        padding: 15px;
+    }
+    .human-header {
+        font-size: 26px;
+    }
+    .human-text {
+        font-size: 28px;
+        color: #5D5D5D;
+    }
+    .browes-all {
+        font-size: 32px;
+        margin: 7px;
+    }
+    .all-btn {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 110px;
+        margin-top: 50px;
+    }
+    .see {
+        display: grid;
+        background: black;
+        width: 667px;
+        justify-items: center;
+        height: 600px;
+        padding: 50px;
+
+        grid-template-areas:
+            "see1"
+            "see-h-1"
+            "see-text1"
+            "see2"
+            "see-h-2"
+            "see-text2"
+            "see3"
+            "see-h-3"
+            "see-text3"
+        ;
+    }
+    .see-header {
+        color: white;
+    }
+    .see-text {
+        color: #FBFBFB;
+    }
+    main {
+        display: grid;
+        /* gap: 16px; */
+        grid-template-areas:
+            "im6"
+            "im7"
+            "im8"
+            "im9"
+            "im10"
+            "im11"
+            "im12"
+            "im13"
+            "im14"
+            "pagin"
+        ;
+    }
+    .catalog-info {
+        width: 760px;
+        display: grid;
+        grid-template-areas:
+            "cat-name cat-path"
+        ;
+        background-color: #F8F3F4;
+    }
+    .catalog-set {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        /* margin-left: 250px; */
+        display: flex;
+        justify-content: space-between;
+        width: 767px;
     }
 }
 
@@ -165,7 +426,6 @@
     grid-area: im5;
     justify-self: center;
 }
-
 .im6 {
     grid-area: im6;
 }
@@ -183,6 +443,18 @@
 }
 .im11 {
     grid-area: im11;
+}
+.im12 {
+    grid-area: im12;
+}
+.im13 {
+    grid-area: im13;
+}
+.im14 {
+    grid-area: im14;
+}
+pagination {
+    grid-area: pagin;
 }
 .all-btn {
     grid-area: all-btn;
@@ -219,30 +491,28 @@
 .see-text3 {
     grid-area: see-text3;
 }
+.price {
+    color: red;
+}
+.red-text {
+    color: red;
+}
 
 @media (min-width: 768px) {
     body {
-        width: 1600px;
-        margin-left: 160px;
-    }
-    .top {
-        width: 1600px;
+        margin: 0;
     }
     .top-top {
         margin-left: 231px;
         margin-right: 231px;
     }
-    .preview {
-        width: 1600px;
-    }
     .content {
         display: grid;
-        width: 1140px;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 360px);
         gap: 30px;
         margin-top: 65px;
-        margin-left: 250px;
-        grid-template-areas: 
+        margin-left: 410px;
+        grid-template-areas:
             "im1 im2 im3"
             "im4 im4 im4"
             "im5 im5 im5"
@@ -290,14 +560,20 @@
         left: 896px;
         top: 1278px;
     }
+    .text {
+        font-size: 30px;
+    }
+    .little-text {
+        font-size: 14px;
+    }
     .human-header {
-        font-family: Lato;
+        font-family: Lato, sans-serif;
         font-style: normal;
         font-size: 13px;
         line-height: 16px;
     }
     .human-text {
-        font-family: Lato;
+        font-family: Lato, sans-serif;
         font-style: normal;
         font-weight: 300;
         font-size: 14px;
@@ -306,15 +582,13 @@
     }
     .human-back {
         background: #F8F8F8;
+        max-width: 325px;
         margin-top: -5px;
         padding: 18px;
     }
-    .price {
-        color: red;
-    }
     .browes-all {
         margin: 0;
-        font-family: Lato;
+        font-family: Lato, sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
@@ -330,7 +604,7 @@
         gap: 28px 347px;
         text-align: center;
         grid-template-rows: repeat(3, 20px);
-        grid-template-areas: 
+        grid-template-areas:
             "see1 see2 see3"
             "see-h-1 see-h-2 see-h-3"
             "see-text1 see-text2 see-text3"
@@ -338,7 +612,7 @@
     }
     .see-header {
         color: white;
-        font-family: Lato;
+        font-family: Lato, sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 19.96px;
@@ -346,7 +620,7 @@
         margin-top: 0;
     }
     .see-text {
-        font-family: Lato;
+        font-family: Lato, sans-serif;
         font-style: normal;
         font-weight: 300;
         font-size: 13.972px;
@@ -355,33 +629,84 @@
         color: #FBFBFB;
     }
     .catalog-name {
-        margin-top: 60px;
-        margin-left: 230px;
-        font-family: Lato;
+        font-family: Lato, sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 24px;
         line-height: 29px;color: #F16D7F;
     }
+    .catalog-path {
+        font-family: Lato, sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+    }
     .catalog-info {
+        display: grid;
+        gap: 600px;
+        grid-template-areas:
+            "cat-name cat-path"
+        ;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        padding-left: 230px;
         background-color: #F8F3F4;
     }
+    .catalog-set {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 250px;
+        display: flex;
+        justify-content: space-between;
+        width: 650px;
+    }
+    sorting {
+        color: #6F6E6E;
+        display: flex;
+    }
+    filter {
+        display: flex;
+    }
+    .cat-path {
+        display: flex;
+        margin: 0 20px 0 0;
+        height: 5px;
+        align-items: baseline;
+    }
+    main {
+        display: grid;
+        width: 1140px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 30px;
+        margin: 0 0 0 370px;
+        grid-template-areas:
+            "im6 im7 im8"
+            "im9 im10 im11"
+            "im12 im13 im14"
+            ". pagin ."
+        ;
+    }
 }
-
+.cat-name {
+    grid-area: cat-name;
+}
+.cat-path {
+    grid-area: cat-path;
+}
 .text {
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
     line-height: 36px;
     text-align: center;
 }
 
 .little-text {
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
     line-height: 17px;
     color: #9F9F9F;
 }
