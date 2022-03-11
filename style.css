@@ -30,9 +30,13 @@
             "all-btn all-btn all-btn"
         ;
     }
+    .im1, .im2, .im3, .im4{
+        background: #000;
+    }
     .pic {
         width: 244px;
         display: block;
+        opacity: 0.6;
     }
     .pic1 {
         width: 768px;
@@ -51,16 +55,24 @@
         display: none;
     }
     .im1text {
-        display: none;
+        position: absolute;
+        top: 540px;
+        left: 50px;
     }
     .im2text {
-        display: none;
+        position: absolute;
+        top: 540px;
+        left: 330px;
     }
     .im3text {
-        display: none;
+        position: absolute;
+        top: 540px;
+        left: 610px;
     }
     .im4text {
-        display: none;
+        position: absolute;
+        top: 700px;
+        left: 330px;
     }
     .manimg {
         width: 50vw;
