@@ -1,6 +1,7 @@
-@media (max-width: 767px) {
-    .body {
+@media (max-width: 768px) {
+    body {
         margin: 0;
+        width: 767px;
     }
     .top {
         width: 767px;
@@ -14,10 +15,20 @@
         margin-left: 32px;
         margin-right: 32px;
     }
+    .rect {
+        margin-top: 25px;
+    }
+    .bigtextimg {
+        width: 70%;
+        margin-left: 10px;
+    }
+    .rect-img {
+        height: 70%;
+    }
     .content {
         display: grid;
         margin-left: 0;
-        width: 768px;
+        width: 767px;
         grid-template-columns: repeat(3, 1fr);
         gap: 18px;
         margin-top: 18px;
@@ -39,7 +50,7 @@
         opacity: 0.6;
     }
     .pic1 {
-        width: 768px;
+        width: 767px;
         display: block;
     }
     .im1rec {
@@ -145,9 +156,8 @@
         margin-bottom: 50px;
         display: flex;
         justify-content: space-between;
-        /* width: 650px; */
     }
-    sorting {
+    .sorting {
         color: #6F6E6E;
         display: flex;
     }
@@ -174,12 +184,56 @@
             "im12 im13"
             "pagin pagin"
         ;
+        margin-bottom: 50px;
+    }
+    .contacts {
+        background-image: url('static/bot_bd.png');
+        background-color: rgba(255,255,255,0.6);
+        background-blend-mode: lighten;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .contacts-left {
+        margin-left: 31%;
+    }
+    .contacts-right {
+        margin-left: 27%;
+    }
+    .con-left-img {
+        width: 300px;
+    }
+    .con-right-img {
+        width: 350px;
+    }
+    .bot {
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 32px 30px 32px;
+    }
+    .bot-left {
+        color: #fff;
+        font-family: Lato, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .bot-right {
+        margin-top: 8px;
     }
 }
 
-@media (max-width: 375px) {
-    .body {
+@media (max-width: 376px) {
+    body {
         margin: 0;
+        width: 374px;
+    }
+    .top {
+        width: 374px;
+    }
+    .preview {
+        width: 374px;
     }
     .man {
         display: none;
@@ -196,9 +250,9 @@
     .content {
         display: grid;
         margin-left: 0;
-        grid-template-columns: 767px;
         gap: 18px;
         margin-top: 18px;
+        width: 374px;
         grid-template-areas:
             "im1"
             "im2"
@@ -215,85 +269,78 @@
         ;
     }
     .pic {
-        width: 768px;
+        width: 374px;
         display: block;
     }
     .pic1 {
-        width: 768px;
+        width: 374px;
         display: block;
+    }
+    .man-text {
+        margin-left: 20px;
     }
     .big-text {
         margin-left: 10px;
     }
-    .rect {
-        margin-left: 215px;
+    .bigtextimg {
+        width: 300px;
     }
     .im1rec {
-        display: block;
-        width: 768px;
-        position: absolute;
-        top: 470px;
+        display: none;
     }
     .im2rec {
-        display: block;
-        width: 768px;
-        position: absolute;
-        top: 1040px;
+        display: none;
     }
     .im3rec {
-        display: block;
-        width: 768px;
-        position: absolute;
-        top: 1615px;
+        display: none;
     }
     .im4rec {
-        display: block;
-        width: 768px;
-        position: absolute;
-        top: 2187px;
+        display: none;
     }
     .im1text {
         display: block;
         position: absolute;
-        width: 100%;
-        top: 700px;
-        left: 240px;
+        width: 40%;
+        top: 580px;
+        left: 125px;
         max-width: 300px;
     }
     .im2text {
         display: block;
         position: absolute;
-        width: 100%;
-        top: 1270px;
-        left: 240px;
+        width: 40%;
+        top: 870px;
+        left: 125px;
         max-width: 300px;
     }
     .im3text {
         display: block;
         position: absolute;
-        width: 100%;
-        top: 1840px;
-        left: 240px;
+        width: 40%;
+        top: 1170px;
+        left: 125px;
         max-width: 300px;
     }
     .im4text {
         display: block;
         position: absolute;
-        width: 100%;
-        top: 2220px;
-        left: 240px;
+        width: 40%;
+        top: 1340px;
+        left: 125px;
         max-width: 300px;
     }
     .text {
-        font-size: 60px;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
     }
     .little-text {
-        font-size: 28px;
-        margin-top: 10px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
     }
     .human {
-        width: 768px;
-        height: 76%;
+        width: 374px;
         display: block;
     }
     .human-back {
@@ -314,16 +361,16 @@
     .all-btn {
         padding-top: 0;
         padding-bottom: 0;
-        margin-bottom: 110px;
-        margin-top: 50px;
+        margin-bottom: 10px;
+        margin-top: 0;
     }
     .see {
         display: grid;
         background: black;
-        width: 667px;
+        width: 374px;
         justify-items: center;
         height: 600px;
-        padding: 50px;
+        padding: 0;
 
         grid-template-areas:
             "see1"
@@ -342,10 +389,14 @@
     }
     .see-text {
         color: #FBFBFB;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .see1 {
+        margin-top: auto;
     }
     main {
         display: grid;
-        /* gap: 16px; */
         grid-template-areas:
             "im6"
             "im7"
@@ -358,10 +409,13 @@
             "im14"
             "pagin"
         ;
+        margin-bottom: 50px;
     }
     .catalog-info {
-        width: 760px;
+        width: 374px;
         display: grid;
+        gap: 90px;
+        grid-template-columns: repeat(2, 130px);
         grid-template-areas:
             "cat-name cat-path"
         ;
@@ -370,10 +424,48 @@
     .catalog-set {
         margin-top: 50px;
         margin-bottom: 50px;
-        /* margin-left: 250px; */
         display: flex;
         justify-content: space-between;
-        width: 767px;
+        width: 374px;
+    }
+    .contacts {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .contacts-left {
+        margin-left: 13%;
+    }
+    .contacts-right {
+        margin-left: 5%;
+    }
+    .con-left-img {
+        width: 300px;
+    }
+    .con-right-img {
+        width: 350px;
+    }
+    .bot {
+        background-color: black;
+        display: grid;
+        grid-template-areas:
+            "bot-right"
+            "bot-left";
+        padding: 0;
+        justify-items: center;
+        padding-left: 65px;
+    }
+    .bot-left {
+        color: #fff;
+        font-family: Lato, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        grid-area: bot-left;
+    }
+    .bot-right {
+        margin-top: 8px;
+        grid-area: bot-right;
     }
 }
 
@@ -465,7 +557,7 @@
 .im14 {
     grid-area: im14;
 }
-pagination {
+.pagination {
     grid-area: pagin;
 }
 .all-btn {
@@ -514,16 +606,16 @@ pagination {
     body {
         margin: 0;
     }
-    .top-top {
-        margin-left: 231px;
-        margin-right: 231px;
+    .top {
+        padding-left: 231px;
+        padding-right: 231px;
     }
     .content {
         display: grid;
         grid-template-columns: repeat(3, 360px);
         gap: 30px;
         margin-top: 65px;
-        margin-left: 410px;
+        margin-left: 17%;
         grid-template-areas:
             "im1 im2 im3"
             "im4 im4 im4"
@@ -536,40 +628,43 @@ pagination {
     .man-text {
         width: 405px;
     }
+    .im1, .im2, .im3, .im4{
+        background: #000;
+    }
+    .pic {
+        display: block;
+        opacity: 0.6;
+    }
     .im1rec {
-        position: absolute;
-        left: 410px;
+        display: none;
     }
     .im2rec {
-        position: absolute;
-        left: 800px;
+        display: none;
     }
     .im3rec {
-        position: absolute;
-        left: 1190px;
+        display: none;
     }
     .im4rec {
-        position: absolute;
-        left: 410px;
+        display: none;
     }
     .im1text {
         position: absolute;
-        left: 515px;
+        left: 23%;
         top: 1028px;
     }
     .im2text {
         position: absolute;
-        left: 926px;
+        left: 48%;
         top: 1028px;
     }
     .im3text {
         position: absolute;
-        left: 1315px;
+        left: 71%;
         top: 1028px;
     }
     .im4text {
         position: absolute;
-        left: 896px;
+        left: 46%;
         top: 1278px;
     }
     .text {
@@ -613,7 +708,7 @@ pagination {
         height: 340px;
         margin-top: 95px;
         justify-content: center;
-        gap: 28px 347px;
+        gap: 28px 15px;
         text-align: center;
         grid-template-rows: repeat(3, 20px);
         grid-template-areas:
@@ -633,12 +728,12 @@ pagination {
     }
     .see-text {
         font-family: Lato, sans-serif;
-        font-style: normal;
         font-weight: 300;
         font-size: 13.972px;
         line-height: 17px;
         text-align: center;
         color: #FBFBFB;
+        width: 350px;
     }
     .catalog-name {
         font-family: Lato, sans-serif;
@@ -700,6 +795,34 @@ pagination {
             ". pagin ."
         ;
     }
+    .contacts {
+        background-image: url('static/bot_bd.png');
+        background-color: rgba(255,255,255,0.6);
+        background-blend-mode: lighten;
+        display: flex;
+        justify-content: space-between;
+        padding: 90px 230px 40px 230px;
+    }
+    .contacts-right {
+        margin-top: 40px;
+    }
+    .bot {
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 235px 30px 235px;
+    }
+    .bot-left {
+        color: #fff;
+        font-family: Lato, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .bot-right {
+        margin-top: 8px;
+    }
 }
 .cat-name {
     grid-area: cat-name;
@@ -708,7 +831,7 @@ pagination {
     grid-area: cat-path;
 }
 .text {
-    font-family: Lato, sans-serif;
+    font-family:Lato, sans-serif sans-serif;
     font-style: normal;
     font-weight: normal;
     line-height: 36px;
